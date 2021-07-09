@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ArrServiceService } from './arr-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Main';
+  constructor(svc: ArrServiceService) {
+    svc.arr;
+  }
 }
